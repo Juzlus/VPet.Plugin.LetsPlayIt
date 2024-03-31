@@ -1,0 +1,155 @@
+﻿<Window x:Class="VPet.Plugin.LetsPlayIt.winSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        xmlns:ll="clr-namespace:LinePutScript.Localization.WPF;assembly=LinePutScript.Localization.WPF"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:VPet.Plugin.LetsPlayIt"
+        xmlns:pu="clr-namespace:Panuon.WPF.UI;assembly=Panuon.WPF.UI"
+        mc:Ignorable="d" Title="{ll:Str 'LetsPlayIt - Settings'}" Width="450" Height="435"
+        FontSize="16" ResizeMode="NoResize" WindowState="Normal" SizeToContent="Height"
+        Closed="Window_Closed" Background="{DynamicResource PrimaryLighter}">
+    <FrameworkElement.Resources>
+        <Style x:Key="ThemeTextBlock" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Grid.ColumnSpan" Value="3" />
+            <Setter Property="Margin" Value="0,0,15,0" />
+        </Style>
+        <Style x:Key="ThemeButton" TargetType="Button">
+            <Setter Property="Height" Value="25" />
+            <Setter Property="Background" Value="{DynamicResource SecondaryLight}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource SecondaryDark}" />
+        </Style>
+    </FrameworkElement.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <Grid Margin="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60*" />
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="60*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="{ll:Str Active}" Style="{DynamicResource ThemeTextBlock}" />
+            <TextBlock Grid.Row="4" Text="{ll:Str Cooldown}" Style="{DynamicResource ThemeTextBlock}" />
+            <TextBlock Grid.Row="5" Text="{ll:Str Path1}" Style="{DynamicResource ThemeTextBlock}" />
+            <TextBlock Grid.Row="6" Text="{ll:Str Path2}" Style="{DynamicResource ThemeTextBlock}" />
+            <TextBlock Grid.Row="7" Text="{ll:Str Path3}" Style="{DynamicResource ThemeTextBlock}" />
+            <TextBlock Grid.Row="1" Text="{ll:Str Show game app}" Style="{DynamicResource ThemeTextBlock}" />
+            <TextBlock Grid.Row="2" Text="{ll:Str Show music app}" Style="{DynamicResource ThemeTextBlock}" />
+            <TextBlock Grid.Row="3" Text="{ll:Str Show paint app}" Style="{DynamicResource ThemeTextBlock}" />
+            <TextBlock Grid.Row="8" Text="{ll:Str Apps list}" Style="{DynamicResource ThemeTextBlock}" />
+
+            <pu:Switch x:Name="ActiveSwitch" Background="Transparent"
+                BorderBrush="{DynamicResource PrimaryDark}" BoxHeight="18" BoxWidth="35" Grid.Row="0" Grid.Column="2"
+                CheckedBackground="{DynamicResource Primary}" CheckedBorderBrush="{DynamicResource Primary}"
+                CheckedToggleBrush="{DynamicResource DARKPrimaryText}" Content="{ll:Str LetsPlayIt}"
+                ToggleBrush="{DynamicResource PrimaryDark}" ToggleShadowColor="{x:Null}"
+                ToggleSize="14" />
+            <TextBox x:Name="Path_1" Style="{DynamicResource StandardTextBoxStyle}" Width="250" FontSize="15" Padding="0, 1.5, 0, 0"
+					HorizontalAlignment="Center" MaxLength="50" AcceptsReturn="True" TextWrapping="WrapWithOverflow" TextAlignment="Left"
+                    BorderThickness="2" Grid.Row="5" Margin="5,5,5,5" Grid.Column="2" Text=""
+                    ToolTip="{ll:Str Path to folder with .exe / .lnk files}" />
+
+            <TextBox x:Name="Path_2" Style="{DynamicResource StandardTextBoxStyle}" Width="250" FontSize="15" Padding="0, 1.5, 0, 0"
+					HorizontalAlignment="Center" MaxLength="50" AcceptsReturn="True" TextWrapping="WrapWithOverflow" TextAlignment="Left"
+                    BorderThickness="2" Grid.Row="6" Margin="5,5,5,5" Grid.Column="2" Text=""
+                    ToolTip="{ll:Str Path to folder with .exe / .lnk files}" />
+
+            <TextBox x:Name="Path_3" Style="{DynamicResource StandardTextBoxStyle}" Width="250" FontSize="15" Padding="0, 1.5, 0, 0"
+					HorizontalAlignment="Center" MaxLength="50" AcceptsReturn="True" TextWrapping="WrapWithOverflow" TextAlignment="Left"
+                    BorderThickness="2" Grid.Row="7" Margin="5,5,5,5" Grid.Column="2" Text=""
+                    ToolTip="{ll:Str Path to folder with .exe / .lnk files}" />
+
+            <pu:Switch x:Name="ShowGameApp" Background="Transparent"
+                BorderBrush="{DynamicResource PrimaryDark}" BoxHeight="18" BoxWidth="35" Grid.Row="1" Grid.Column="2"
+                CheckedBackground="{DynamicResource Primary}" CheckedBorderBrush="{DynamicResource Primary}"
+                CheckedToggleBrush="{DynamicResource DARKPrimaryText}"
+                ToggleBrush="{DynamicResource PrimaryDark}" ToggleShadowColor="{x:Null}"
+                ToggleSize="14" />
+
+            <pu:Switch x:Name="ShowMusicApp" Background="Transparent"
+                BorderBrush="{DynamicResource PrimaryDark}" BoxHeight="18" BoxWidth="35" Grid.Row="2" Grid.Column="2"
+                CheckedBackground="{DynamicResource Primary}" CheckedBorderBrush="{DynamicResource Primary}"
+                CheckedToggleBrush="{DynamicResource DARKPrimaryText}"
+                ToggleBrush="{DynamicResource PrimaryDark}" ToggleShadowColor="{x:Null}"
+                ToggleSize="14" />
+
+            <pu:Switch x:Name="ShowPaintApp" Background="Transparent"
+                BorderBrush="{DynamicResource PrimaryDark}" BoxHeight="18" BoxWidth="35" Grid.Row="3" Grid.Column="2"
+                CheckedBackground="{DynamicResource Primary}" CheckedBorderBrush="{DynamicResource Primary}"
+                CheckedToggleBrush="{DynamicResource DARKPrimaryText}"
+                ToggleBrush="{DynamicResource PrimaryDark}" ToggleShadowColor="{x:Null}"
+                ToggleSize="14" />
+
+            <TextBlock Grid.Row="1" Grid.Column="2" Text="{ll:Str 'Apps found: '}" Foreground="LimeGreen" Margin="55, 0" FontSize="12" Style="{DynamicResource ThemeTextBlock}"><InlineUIContainer>
+                    <TextBlock x:Name="AppFoundGame" Text="0" Style="{DynamicResource ThemeTextBlock}" />
+                    </InlineUIContainer></TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="2" Text="{ll:Str 'Apps found: '}" Foreground="LimeGreen" Margin="55, 0" FontSize="12" Style="{DynamicResource ThemeTextBlock}"><InlineUIContainer>
+                    <TextBlock x:Name="AppFoundMusic" Text="0" Style="{DynamicResource ThemeTextBlock}" />
+                    </InlineUIContainer></TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="2" Text="{ll:Str 'Apps found: '}" Foreground="LimeGreen" Margin="55, 0" FontSize="12" Style="{DynamicResource ThemeTextBlock}"><InlineUIContainer>
+                    <TextBlock x:Name="AppFoundPaint" Text="0" Style="{DynamicResource ThemeTextBlock}" />
+                    </InlineUIContainer></TextBlock>
+
+            <Grid Grid.Row="4" Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="90*" />
+                    <ColumnDefinition Width="10*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Slider x:Name="CooldownSlider" Grid.Row="1" VerticalAlignment="Center"
+                    IsSnapToTickEnabled="True" LargeChange="2" Maximum="24" Minimum="0.1" SmallChange="0.1"
+                    Style="{DynamicResource StandardSliderStyle}" TickFrequency="0.1"
+                    ToolTip="{ll:Str How often to call the function (in hours)}"
+                    Value="0.5" />
+                <TextBlock Grid.Row="1" Grid.Column="1" Margin="15,0,0,0" VerticalAlignment="Center"
+                    Background="{x:Null}" FontSize="18" FontWeight="Bold"
+                    Foreground="{DynamicResource DARKPrimaryDarker}"
+                    Text="{Binding Value, ElementName=CooldownSlider, StringFormat=0.0h}"
+                    ToolTip="{ll:Str How often to call the function (in hours)}" />
+            </Grid>
+
+            <Grid Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*" />
+                    <ColumnDefinition Width="50*" />
+                    <ColumnDefinition Width="50*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Button ToolTip="{ll:Str Open the file with the names of the games}" Click="OpenFile_G" Grid.Column="0" Content="{ll:Str Game}" Margin="10, 0, 10, 0" Padding="10, 0, 10, 0" Style="{DynamicResource ThemeButton}" />
+                <Button ToolTip="{ll:Str Open the file with the names of the music streaming programmes}" Click="OpenFile_M" Grid.Column="1" Content="{ll:Str Music}" Margin="10, 0, 10, 0" Padding="10, 0, 10, 0" Style="{DynamicResource ThemeButton}" />
+                <Button ToolTip="{ll:Str Open the file with the names of the drawing programmes}" Click="OpenFile_P" Grid.Column="2" Content="{ll:Str Paint}" Margin="10, 0, 10, 0" Padding="10, 0, 10, 0" Style="{DynamicResource ThemeButton}" />
+            </Grid>
+
+            <Grid Grid.Row="9" Grid.ColumnSpan="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*" />
+                    <ColumnDefinition Width="50*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Button Click="Save" Grid.Column="0" Content="{ll:Str Save}" Margin="10, 0, 10, 0" Padding="10, 0, 10, 0" Style="{DynamicResource ThemeButton}" />
+                <Button Click="Test" Grid.Column="1" Content="{ll:Str Test}" Margin="10, 0, 10, 0" Padding="10, 0, 10, 0" Style="{DynamicResource ThemeButton}" />
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Window>
