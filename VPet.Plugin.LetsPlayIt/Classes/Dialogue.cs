@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace VPet.Plugin.LetsPlayIt
+namespace VPet.Plugin.LetsPlayIt.Classes
 {
     public class Dialogue
     {
@@ -28,7 +28,7 @@ namespace VPet.Plugin.LetsPlayIt
             "Master, game on with \"{APP}\" – are you in?",
         };
 
-        public List<string> paint = new List<string>
+        public List<string> art = new List<string>
         {
             "Master, feeling artsy? Let's doodle on \"{APP}\"!",
             "Time for a drawing session, master! \"{APP}\" awaits.",

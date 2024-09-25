@@ -1,4 +1,6 @@
-vupmod#LetsPlayIt:|author#Juzlus:|gamever#11000:|ver#102:|
-intro#Master/com let's play it!/n/nThis modification searches the specified paths to find .exe/!.lnk/!.url files that have the correct name./nThis allows your virtual pet to suggest a game to you.:|
+vupmod#LetsPlayIt:|author#Juzlus:|gamever#11031:|ver#104:|
+intro#LetsPlayItIntro:|
+lang#en:|LetsPlayItIntro#Master, let's play it!\n\nThis modification searches the specified paths to find .exe/!.lnk/!.url files that have the correct name.\nThis allows your virtual pet to suggest a game to you.:|LetsPlayIt#LetsPlayIt:|
+lang#zh-Hans:|LetsPlayItIntro#主人！玩这个！\n\n此mod将会搜索指定包含exe文件、快捷方式或url的路径下符合条件的软件，让你的桌宠端着图标喊你玩（如果找不到可自行在MOD设置中添加软件名:|LetsPlayIt#玩这个！:|
 authorid#189827264:|
 itemid#3043846932:|

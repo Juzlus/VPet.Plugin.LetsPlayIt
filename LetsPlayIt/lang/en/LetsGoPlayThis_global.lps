@@ -1,25 +1,53 @@
 LetsPlayIt - Settings#LetsPlayIt - Settings:|
+
+Options#Options:|
 Active#Active:|
+Show game apps#Show game apps:|
+Show music apps#Show music apps:|
+Show art apps#Show art apps:|
 Cooldown#Cooldown:|
-Path1#Path1:|
-Path2#Path2:|
-Path3#Path3:|
-Apps list#Apps list:|
+App names#App names:|
+Time to next app#Time to next app:|
 LetsPlayIt#LetsPlayIt:|
-Path to folder with .exe / .lnk files#Path to folder with .exe / .lnk files:|
-How often to call the function (in hours)#How often to call the function (in hours):|
-Game#Game:|
-Open the file with the names of the games#Open the file with the names of the games:|
-Music#Music:|
-Open the file with the names of the music streaming programmes#Open the file with the names of the music streaming programmes:|
-Paint#Paint:|
-Open the file with the names of the drawing programmes#Open the file with the names of the drawing programmes:|
-Save#Save:|
-Test#Test:|
-No application found in the specified paths.#No application found in the specified paths.:|
-Show game app#Show game app:|
-Show music app#Show music app:|
-Show paint app#Show paint app:|
-Any type of application is disabled.#Any type of application is disabled.:|
-The application does not exist, it has probably been moved.#The application does not exist, it has probably been moved.:|
 Apps found: #Apps found: :|
+Game#Game:|
+Music#Music:|
+Art#Art:|
+How often to call the function (in hours)#How often to call the function (in hours):|
+Open the file with the names of the games#Open the file with the names of the games:|
+Open the file with the names of the music streaming programmes#Open the file with the names of the music streaming programmes:|
+Open the file with the names of the drawing programmes#Open the file with the names of the drawing programmes:|
+Test#Test:|
+
+App List#App List:|
+LP.#LP.:|
+Icon#Icon:|
+Name#Name:|
+Path#Path:|
+Type#Type:|
+Added#Added:|
+Load More#Load More:|
+Import from...#Import from...:|
+Steam#Steam:|
+Folder (by file name)#Folder (by file name):|
+File#File:|
+Check paths#Check paths:|
+Clear All#Clear All:|
+De/Activate#De/Activate:|
+Trigger#Trigger:|
+Change type#Change type:|
+Delete#Delete:|
+
+Select app#Select app:|
+First Load#First Load:|
+Do you want to load your Steam library?#Do you want to load your Steam library?:|
+Do you want to search for apps from your ProgramFilesX86 (search by app name)?#Do you want to search for apps from your ProgramFilesX86 (search by app name)?:|
+Do you want to search for apps from your Desktop (search by app name)?#Do you want to search for apps from your Desktop (search by app name)?:|
+All paths match.#All paths match.:|
+Removed {0} apps without correct path.#Removed {0} apps without correct path.:|
+Added {0} new games.#Added {0} new games.:|
+\nAdded {1} new music apps.#\nAdded {1} new music apps.:|
+\nAdded {2} new art apps.#\nAdded {2} new art apps.:|
+Any type of application is disabled.#Any type of application is disabled.:|
+No application found in the specified paths.#No application found in the specified paths.:|
+The application does not exist, it has probably been moved.#The application does not exist, it has probably been moved.:|

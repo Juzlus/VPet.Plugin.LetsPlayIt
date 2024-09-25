@@ -15,3 +15,4 @@ Affinity Photo
 Inkscape
 Paint Tool SAI 2
 Aseprite
+Blender

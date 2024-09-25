@@ -1,0 +1,23 @@
+LetsPlayIt - Settings#玩这个！ - 设置:|
+Active#开启/关闭:|
+Cooldown#冷却时长:|
+Path#路径:|
+App List#软件名列表:|
+LetsPlayIt#玩这个！:|
+Path to folder with .exe / .lnk files#文件夹路径（检查里面的exe文件或快捷方式）:|
+How often to call the function (in hours)#触发间隔（小时）:|
+Game#游戏:|
+Open the file with the names of the games#这里储存可识别的游戏名:|
+Music#音乐:|
+Open the file with the names of the music streaming programmes#这里储存可识别的音乐软件名:|
+Art#绘图:|
+Open the file with the names of the drawing programmes#这里储存可识别的绘图软件名:|
+Save#保存:|
+Test#测试:|
+No application found in the specified paths.#此路径下找不到软件QAQ:|
+Show game apps#展示游戏:|
+Show music apps#展示音乐软件:|
+Show art apps#展示绘图软件:|
+Any type of application is disabled.#已禁止所有软件:|
+The application does not exist, it has probably been moved.#该软件不存在，可能已被移动:|
+Apps found: #已找到：:|
