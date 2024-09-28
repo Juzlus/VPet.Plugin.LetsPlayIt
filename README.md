@@ -2,10 +2,26 @@
 <img src="https://steamuserimages-a.akamaihd.net/ugc/2079031399340727036/129516EFD5D85E1A1458CD531D9694A8C8B6813C/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" align="right" width="100px"/>
 
 This is a modification to [VPET Simulator](https://store.steampowered.com/app/1920960/VPet/) that allows your virtual pet to suggest games to you.
+Games from the Steam library are imported from registry keys.
 
 This modification searches the specified paths to find .exe / .lnk / .url files that have the correct name.
 
  [Page on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3043846932).
+
+## ✨ Usage (NuGet package)
+
+- [LinePutScript](https://github.com/LorisYounger/LinePutScript?tab=readme-ov-file)
+- [LinePutScript.Localization.WPF](https://github.com/LorisYounger/LinePutScript.Localization.WPF)
+- [Microsoft.CSharp](https://github.com/dotnet/corefx)
+- [Microsoft.Win32.Registry](https://github.com/dotnet/runtime)
+- [Panuon.WPF](https://github.com/Panuon/Panuon.WPF)
+- [Panuon.WPF.UI](https://github.com/Panuon/Panuon.WPF.UI)
+- [System.Data.DataSetExtension](https://github.com/dotnet/winforms)
+- [System.Drawing.Common](https://github.com/dotnet/winforms)
+- [System.Runtime.CompilerServices.Unsafe](https://github.com/dotnet/runtime)
+- [VPet-Simulator.Core](https://github.com/LorisYounger/VPet)
+- [VPet-Simulator.Windows.Interface](https://github.com/LorisYounger/VPet)
+
 
 ## 🔥 Screenshots
 
@@ -14,6 +30,10 @@ This modification searches the specified paths to find .exe / .lnk / .url files 
 
 ## 📋 Changelog
 
+### v1.0.4
+- Rewrite
+### v1.0.3
+- Added Chinese (zh-Hans) translated by [@genhao64](https://steamcommunity.com/profiles/76561199155501597)
 ### v1.0.2
 - Support for .url files
 ### v1.0.1
